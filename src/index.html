@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>八仙双人桌宠</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="stage" aria-label="八仙双人桌宠">
+      <div class="pet" id="lv" data-pet="lv" style="--x: 275px; --y: 22px">
+        <div class="bubble" aria-live="polite"></div>
+        <img
+          src="./assets/states/lv-idle-1.png"
+          alt="吕洞宾"
+          draggable="false"
+        />
+      </div>
+
+      <div class="pet" id="zhong" data-pet="zhong" style="--x: 480px; --y: 22px">
+        <div class="bubble" aria-live="polite"></div>
+        <img
+          src="./assets/states/zhong-idle-1.png"
+          alt="钟离权"
+          draggable="false"
+        />
+      </div>
+
+      <div id="duo-interaction" aria-hidden="true">
+        <img
+          src="./assets/states/duo-cuddle.png"
+          alt=""
+          draggable="false"
+        />
+      </div>
+
+      <div id="hearts" aria-hidden="true"></div>
+    </main>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
